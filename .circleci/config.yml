@@ -1,12 +1,7 @@
-version: 2.1
-orbs:
-  node: circleci/node@5.1.0
-  workflows:
-    example-workflow:
 jobs:
   build:
     docker:
-        - image: docker:18.09-git
+      - image: docker:18.09-git
     steps:
       - checkout
       - setup_remote_docker
